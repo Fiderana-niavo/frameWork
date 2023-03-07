@@ -59,7 +59,6 @@ public class FrontServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         String url = request.getRequestURL().toString();
         Utilitaire u = new Utilitaire();
-        out.println( request.getRequestURL().toString());
         try {
             out.println(u.getPostUrl(url));
 
